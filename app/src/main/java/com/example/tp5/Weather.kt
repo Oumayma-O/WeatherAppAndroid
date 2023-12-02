@@ -1,5 +1,7 @@
 package com.example.tp5
 
+import com.example.tp5.forecastModels.Coord
+
 data class Weather(
     val base: String,
     val clouds: Clouds,

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sky_blue"
-    tools:context=".MainActivity">
+    tools:context=".Activities.MainActivity">
 
 
     <ImageView
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="0.39">
+        app:layout_constraintVertical_bias="0.19">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,14 +80,14 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!--<Spinner
-        android:id="@+id/spinner"
+    <Spinner
+        android:id="@+id/citySpinner"
         android:layout_width="164dp"
         android:layout_height="19dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/temperature"
@@ -98,17 +98,17 @@
         android:text="30°"
         android:textAlignment="center"
         android:textColor="#FEFEFE"
-        android:textSize="50dp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/location"
-        android:layout_width="174dp"
-        android:layout_height="32dp"
+        android:layout_width="132dp"
+        android:layout_height="37dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="168dp"
         android:fontFamily="sans-serif-medium"
         android:text="Today"
         android:textAlignment="center"
@@ -130,5 +130,36 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="120dp"
+        android:text="TextView"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/location"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#4CB3E0"
+        android:onClick="onForecastButtonClick"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:radius="8dp"
+        android:text="Forecast"
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

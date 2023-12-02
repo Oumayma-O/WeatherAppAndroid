@@ -1,0 +1,71 @@
+<!-- forecast_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#B495BFC5"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/humidityImage"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        app:srcCompat="@drawable/humidity" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/pressureImage"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        app:srcCompat="@drawable/pressure" />
+
+    <TextView
+        android:id="@+id/textViewPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp" />
+
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp" />
+
+</LinearLayout>
